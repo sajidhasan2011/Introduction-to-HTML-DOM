@@ -7,6 +7,10 @@ function validate(e) {
 
   const age = document.getElementById("age").value;
 
+  const Male = document.getElementById("Male").value;
+
+  const Female = document.getElementById("Female").value;
+
   const msgBox = document.getElementById("message");
 
   let message = "";
@@ -19,6 +23,12 @@ function validate(e) {
     msgBox.style.color = "red";
   } else if (age === "") {
     message = "age Must be Between 12-50";
+    msgBox.style.color = "red";
+  } else if (Male === "") {
+    message = "Please Enter Your Gender";
+    msgBox.style.color = "red";
+  } else if (Female === "") {
+    message = "Please Enter Your Gender";
     msgBox.style.color = "red";
   } else {
     message = "Login Successful";
